@@ -1,0 +1,45 @@
+// @import 'styles/variables.less';
+
+.breadcrumbSection {
+  margin-top: 3px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: right;
+
+  :global(.ant-breadcrumb) {
+    font-size: 14px;
+  }
+
+  :global(.ant-breadcrumb li) {
+    color: #000000;
+  }
+
+  :global(.ant-breadcrumb-link) {
+    a {
+      color: #000000;
+    }
+  }
+}
+
+.pathItem {
+  font-weight: 400;
+}
+
+.enable {
+
+  a {
+    color: #000000 !important;
+
+    &:hover {
+    //   color: @link-hover-color !important;
+      text-decoration: underline;
+    }
+  }
+}
+
+.disable {
+  color: #000000;
+  font-weight: 500;
+  cursor: unset;
+}

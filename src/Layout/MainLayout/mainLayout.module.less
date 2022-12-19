@@ -1,0 +1,72 @@
+// @import '../styles/variables.less';
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+
+  :global(.ant-layout-sider) {
+    // background-color: @left-navigation-color;
+    transition: all 0.25s;
+  }
+
+  :global(.ant-layout) {
+    // background: @layout-background-color;
+    width: 100vw;
+  }
+
+  :global(.ant-menu.ant-menu-dark) {
+    color: #FFFF;
+    // background-color: @left-navigation-color;
+  }
+
+  :global(.ant-menu-dark .ant-menu-item) {
+    color: #FFF;
+  }
+}
+
+.leftSider {
+  height: 100vh;
+  // background-color: @left-navigation-color;
+  color: #fff;
+  display: flex;
+  overflow: auto;
+}
+
+.expander {
+  width: 0px;
+  height: 100vh;
+  background-color: rgb(102, 155, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.expanderExpanded {
+  left: 200px;
+}
+
+.expanderCollapsed {
+  left: 80px;
+}
+
+.leftSider:hover {
+  .expander {
+    width: 15px;
+    transition: all 0.25s;
+  }
+}
+
+.siteLayoutContent {
+  background: #fff;
+  padding: 0px 15px 10px 15px;
+  height: calc(100% - 80px);
+}
+
+.breadcrumbSection {
+  height: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+}
